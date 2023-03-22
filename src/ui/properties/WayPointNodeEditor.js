@@ -8,6 +8,7 @@ import BooleanInput from "../inputs/BooleanInput";
 const messages = {
   "waypoint.label-canBeSpawnPoint": "Spawn Point",
   "waypoint.label-canBeOccupied": "Can be occupied",
+  "waypoint.label-canBeSeated": "Can be Seated",
   "waypoint.label-canBeClicked": "Clickable",
   "waypoint.label-willDisableMotion": "Disable Motion",
   "waypoint.label-willDisableTeleporting": "Disable Teleporting",
@@ -16,6 +17,8 @@ const messages = {
   "waypoint.description-canBeSpawnPoint": "Avatars may be teleported to this waypoint when entering the scene",
   "waypoint.description-canBeOccupied":
     "After each use, this waypoint will be disabled until the previous user moves away from it",
+  "waypoint.description-canBeSeated":
+    "After each use, this waypoint will be seated until the previous user moves away from it",
   "waypoint.description-canBeClicked":
     "This waypoint will be visible in pause mode and clicking on it will teleport you to it",
   "waypoint.description-willDisableMotion": "Avatars will not be able to move after using this waypoint",
@@ -29,6 +32,7 @@ const messages = {
 const propertyNames = [
   "canBeSpawnPoint",
   "canBeOccupied",
+  "canBeSeated",
   "canBeClicked",
   "willDisableMotion",
   "willDisableTeleporting",
