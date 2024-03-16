@@ -26,7 +26,6 @@ export default class WayPointNode extends EditorNodeMixin(Object3D) {
     super(editor);
     this.canBeSpawnPoint = false;
     this.canBeOccupied = false;
-    this.canBeSeated = false;
     this.canBeClicked = false;
     this.willDisableMotion = false;
     this.willDisableTeleporting = false;
@@ -49,7 +48,6 @@ export default class WayPointNode extends EditorNodeMixin(Object3D) {
 
     this.canBeSpawnPoint = source.canBeSpawnPoint;
     this.canBeOccupied = source.canBeOccupied;
-    this.canBeSeated = source.canBeSeated;
     this.canBeClicked = source.canBeClicked;
     this.willDisableMotion = source.willDisableMotion;
     this.willDisableTeleporting = source.willDisableTeleporting;
@@ -73,7 +71,6 @@ export default class WayPointNode extends EditorNodeMixin(Object3D) {
       waypoint: {
         canBeSpawnPoint: this.canBeSpawnPoint,
         canBeOccupied: this.canBeOccupied,
-        canBeSeated: this.canBeSeated,
         canBeClicked: this.canBeClicked,
         willDisableMotion: this.willDisableMotion,
         willDisableTeleporting: this.willDisableTeleporting,
@@ -90,7 +87,6 @@ export default class WayPointNode extends EditorNodeMixin(Object3D) {
 
     node.canBeSpawnPoint = waypoint.props.canBeSpawnPoint;
     node.canBeOccupied = waypoint.props.canBeOccupied;
-    node.canBeSeated = waypoint.props.canBeSeated;
     node.canBeClicked = waypoint.props.canBeClicked;
     node.willDisableMotion = waypoint.props.willDisableMotion;
     node.willDisableTeleporting = waypoint.props.willDisableTeleporting;
@@ -105,7 +101,6 @@ export default class WayPointNode extends EditorNodeMixin(Object3D) {
     this.addGLTFComponent("waypoint", {
       canBeSpawnPoint: this.canBeSpawnPoint,
       canBeOccupied: this.canBeOccupied,
-      canBeSeated: this.canBeSeated,
       canBeClicked: this.canBeClicked,
       willDisableMotion: this.willDisableMotion,
       willDisableTeleporting: this.willDisableTeleporting,
